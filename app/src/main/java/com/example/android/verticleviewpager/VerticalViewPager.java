@@ -6,14 +6,14 @@ import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.View;
 
-public class VerticleViewPager extends ViewPager {
+public class VerticalViewPager extends ViewPager {
 
-    public VerticleViewPager(Context context) {
+    public VerticalViewPager(Context context) {
         super(context);
         init();
     }
 
-    public VerticleViewPager(Context context, AttributeSet attrs) {
+    public VerticalViewPager(Context context, AttributeSet attrs) {
         super(context, attrs);
         init();
     }
@@ -25,7 +25,7 @@ public class VerticleViewPager extends ViewPager {
         setOverScrollMode(OVER_SCROLL_NEVER);
     }
 
-    public void setAdapter(VerticleViewPager verticleViewPager) {
+    public void setAdapter(VerticalViewPager verticleViewPager) {
     }
 
     private class VerticalPageTransformer implements ViewPager.PageTransformer {

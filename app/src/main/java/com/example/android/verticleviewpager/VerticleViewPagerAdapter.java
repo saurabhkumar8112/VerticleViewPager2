@@ -9,10 +9,12 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import java.util.ArrayList;
+
 
 public class VerticleViewPagerAdapter  extends PagerAdapter {
 
-    String mResources[] = {"To start off lets understand what exactly Android CardView is? Its a new widget for Android, which can be used to display a card sort of a layout in android. As you may know Android material design is inspired from paper and ink concept. Mostly it displays views on top of each other, with shadows. In simple terms, Android CardView is such a view which has all material design properties, most importantly showing shadows according the elevation. The best part about this view is that it extends FrameLayout and it can be displayed on all the platforms of android since it’s available through the Support v7 library. Lets have a look at some of its properties:","To start off lets understand what exactly Android CardView is? Its a new widget for Android, which can be used to display a card sort of a layout in android. As you may know Android material design is inspired from paper and ink concept. Mostly it displays views on top of each other, with shadows. In simple terms, Android CardView is such a view which has all material design properties, most importantly showing shadows according the elevation. The best part about this view is that it extends FrameLayout and it can be displayed on all the platforms of android since it’s available through the Support v7 library. Lets have a look at some of its properties:"};
+    String mResources[] = {"The Islamic State has declared war on Taliban militants in Afghanistan and called the Taliban \"hypocrites and stooges of the unbelievers\". \"Taliban militants are betraying Islam and that they should be killed everywhere and their properties should be seized,\" an ISIS commander said.","The Korean War began on this day in 1950 when North Korea invaded South Korea. It was the first war in which the UN played a role. The US, under the auspices of the United Nations, came to the defence of South Korea and fought against North Korea, which was being assisted by China, for the next years."};
 
     Context mContext;
     LayoutInflater mLayoutInflater;
@@ -36,7 +38,6 @@ public class VerticleViewPagerAdapter  extends PagerAdapter {
     @Override
     public Object instantiateItem(ViewGroup container, int position) {
         View itemView = mLayoutInflater.inflate(R.layout.activity_verticle_view_pager, container, false);
-
         TextView label = (TextView) itemView.findViewById(R.id.textView);
         label.setText(mResources[position]);
         container.addView(itemView);
